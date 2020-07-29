@@ -1,0 +1,35 @@
+{
+	"languageserver": {
+		"ccls": {
+			"command": "ccls",
+			"filetypes": [
+				"c",
+				"cpp",
+				"objc",
+				"objcpp"
+			],
+			"rootPatterns": [
+				".ccls",
+				"compile_commands.json",
+				".git/",
+				".hg/"
+			],
+			"initializationOptions": {
+				"cache": {
+					"directory": "/tmp/ccls"
+				}
+			}
+		},
+		"golang": {
+			"command": "gopls",
+			"rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
+			"filetypes": ["go"]
+		}
+	},
+	"diagnostic.enable": false,
+	"pairs.enableCharacters": ["(","[","{","'","\"","`"],
+	"coc.preferences.formatOnSaveFiletypes": ["rust"],
+	"explorer.icon.enableNerdfont":true
+	"explorer.width": 32
+
+}
